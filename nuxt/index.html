@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuxt</title>
+    <link rel="icon" href="https://img.icons8.com/color/2x/nuxt-jc.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+  </head>
+  <body class="bg-black">
+
+    <div class="loader">
+
+
+      <div class="infinityChrome">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+      <div class="infinity">
+        <div>
+          <span></span>
+        </div>
+        <div>
+          <span></span>
+        </div>
+        <div>
+          <span></span>
+        </div>
+      </div>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:
+        none;">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0
+                0 0 1 0 0 0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+
+
+            <a class="dribbble"
+              href="https://dribbble.com/shots/5557955-Infinity-Loader"
+              target="_blank"><img
+                src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg"
+                alt=""></a>
+
+          </div>
+          <header data-aos="fade-up">
+            <img src="https://nuxt.com/assets/home/hero-gradient.svg"
+              class="w-100 header-bg" alt="">
+            <img src="https://nuxt.com/assets/home/hero-gradient-mobile.svg"
+              class="header-bg-mobile" alt="">
+            <nav>
+              <div class="offCanvasDiv">
+                <div>
+                  <i class="bi bi-list c-white" data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample"></i>
+
+                </div>
+
+
+
+                <div class="offcanvas offcanvas-start " tabindex="-1"
+                  id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header c-white">
+                    <i class="bi bi-x-lg c-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></i>
+                    <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+                      width="38px" height="38px" alt="">
+
+
+                    <input type='checkbox' id='timeOffcanvas'/>
+                    <label for='timeOffcanvas' class="toggle_btn ">Night</label>
+                  </div>
+                  <div class="offcanvas-body">
+
+
+                    <div class="accordion c-white" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button c-white" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsetwo" aria-expanded="true"
+                            aria-controls="collapsetwo">
+                            <i class="bi bi-journals mx-2"></i>
+                            Docs
+
+                          </button>
+                        </h2>
+                        <div id="collapsetwo" class="accordion-collapse collapse
+                          show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul>
+
+                              <a class="c-white" href="https://nuxt.com/">Get
+                                Started</a>
+                              <a class="c-white" href="https://nuxt.com/">Guide</a>
+                              <a class="c-white" href="https://nuxt.com/">Api</a>
+                              <a class="c-white" href="https://nuxt.com/">Examples</a>
+                              <a class="c-white" href="https://nuxt.com/">Community</a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <ul class="ul-offcanvas-body">
+
+                      <a class="c-white" href="https://nuxt.com/"><i class="bi
+                          bi-laptop mx-2"></i>Showcase </a>
+                      <a class="c-white" href="https://nuxt.com/"> <i class="bi
+                          bi-browser-edge mx-2"></i>Modules
+
+                      </a>
+
+
+                    </ul>
+                    <div class="accordion c-white" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button c-white" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            <i class="bi bi-person-fill mx-2"></i> Support
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse
+                          show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul>
+
+                              <a class="c-white" href="https://nuxt.com/">Solutions</a>
+                              <a class="c-white" href="https://nuxt.com/">Nuxt
+                                Partner Agencies</a>
+                              <a class="c-white" href="https://nuxt.com/">Sponsors</a>
+                              <a class="c-white" href="https://nuxt.com/">Jobs</a>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <a href="https://nuxt.com/" class="brand c-white">
+                <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+                  width="38px" height="38px" alt="">
+                <p class="mt-3 mx-2">Nuxt</p>
+              </a>
+              <div class="nav-links " dir="rtl">
+                <a class="c-white" href="https://nuxt.com/support/solutions">Support</a>
+                <a class="c-white" href="https://nuxt.com/showcase">Showcase</a>
+                <a class="c-white" href="https://nuxt.com/modules">Modules</a>
+                <a class="c-white" href="https://nuxt.com/docs">Docs</a>
+              </div>
+              <div class="nav-icons ">
+                <a href="https://github.com/nuxt/nuxt"><i class="bi bi-github"></i></a>
+                <a href="https://discord.com/invite/ps2h6QT"><i class="bi
+                    bi-discord"></i></a>
+                <a href="https://twitter.com/nuxt_js"><i class="bi bi-twitter"></i></a>
+              </div>
+
+            </nav>
+            <main>
+              <section class="header-section-right ">
+
+
+                <div class="system">
+                  <div class="system__orbit system__orbit--sun">
+                    <img src="https://img.icons8.com/color/2x/nuxt-jc.png"
+                      alt="Sun" class="system__icon system__icon--sun">
+                  </div>
+
+                  <div class="system__orbit system__orbit--mercury">
+                    <div class="system__planet system__planet--mercury">
+                      <img
+                        src="https://www.dropbox.com/s/2o38602cmwhhdi1/mercury.png?raw=1"
+                        alt="Mercury">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--venus">
+                    <div class="system__planet system__planet--venus">
+                      <img
+                        src="https://www.dropbox.com/s/wvictuysutiirho/venus.png?raw=1"
+                        alt="Venus">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--earth">
+                    <div class="system__planet system__planet--earth">
+                      <img
+                        src="https://www.dropbox.com/s/ropzlyhb1v19l5t/earth.png?raw=1"
+                        alt="Earth">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--mars">
+                    <div class="system__planet system__planet--mars">
+                      <img
+                        src="https://www.dropbox.com/s/fa9biyj617n1q30/mars.png?raw=1"
+                        alt="Mars">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--jupiter">
+                    <div class="system__planet system__planet--jupiter">
+                      <img
+                        src="https://www.dropbox.com/s/d28oxi2c74zcoqk/jupiter.png?raw=1"
+                        alt="Jupiter">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--saturn">
+                    <div class="system__planet system__planet--saturn">
+                      <img
+                        src="https://www.dropbox.com/s/h8pj72v6mmaa0yq/saturn.png?raw=1"
+                        alt="Saturn">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--uranus">
+                    <div class="system__planet system__planet--uranus">
+                      <img
+                        src="https://www.dropbox.com/s/du6znsmfos2r4ry/uranus.png?raw=1"
+                        alt="Uranus">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--neptune">
+                    <div style="top:53% !important" class="system__planet
+                      system__planet--neptune">
+                      <img
+                        src="https://www.dropbox.com/s/170sr7xl6gxpona/neptune.png?raw=1"
+                        alt="Neptune">
+                    </div>
+                  </div>
+                  <div class="system__orbit system__orbit--pluto">
+                    <div class="system__planet system__planet--pluto">
+                      <img
+                        src="https://www.dropbox.com/s/z7axkafhs887t9b/pluto.png?raw=1"
+                        alt="Pluto">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="header-section-left w-100 ">
+                <button class="blob-btn fs-7 mt-5">
+                  Nuxt: A vision for 2023
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                <p class="header-tilte mt-4">The Intuitive Web <br> Framework</p>
+                <p class="header-main-text">Build your next Vue.js application
+                  with confidence using Nuxt. An open source framework under MIT
+                  license that makes web development simple and powerful.</p>
+                <div class="header-btns">
+                  <button class="mt-4 Started-btn">Get Started</button>
+                  <button class="guithub-btn mt-4">
+                    Open on GitHub
+                    <i class="bi bi-chevron-right mx-3"></i></button>
+                </div>
+              </section>
+            </main>
+
+
+          </header>
+
+          <div class="nuxt-options "data-aos="fade-up">
+            <p class="nuxt-options-title">Deliver an optimized <span>User
+                Experience</span></p>
+            <p class="nuxt-options-main-text">How a user interacts with and
+              experiences your website will determine your impact. Utility, <br>
+              ease of use, and efficiency are key. Nuxt is built with a set of
+              features that make this possible.</p>
+            <div class="main-nuxt-options mt-5">
+              <div class="nuxt-option">
+                <div>
+                  <img src="https://nuxt.com/assets/home/ux-fast-dark.svg"
+                    class="w-100" alt="">
+                </div>
+                <p class="c-white mt-3">Fast and Furious</p>
+                <p style="color:gray">Optimized with code-splitting,
+                  tree-shaking, optimized cold-start, link prefetching, payload
+                  extraction, just to name a few. Fast by default so you can
+                  focus on building.</p>
+              </div>
+              <div class="nuxt-option ">
+                <div>
+                  <img src="https://nuxt.com/assets/home/ux-hybrid-dark.svg"
+                    class="w-100" alt="">
+                </div>
+                <p class="c-white mt-3">On-demand Rendering</p>
+                <p style="color:gray">Decide what rendering strategy at the
+                  route level: SSR, SSG, CSR, ISR, ESR, SWR. Build any kind of
+                  website or web application with optimized performance in mind.</p>
+              </div>
+              <div class="nuxt-option ">
+                <div>
+                  <img src="https://nuxt.com/assets/home/ux-seo-dark.svg"
+                    class="w-100" alt="">
+                </div>
+                <p class="c-white mt-3">SEO & Web Vitals</p>
+                <p style="color:#808080">By leveraging server-side rendering,
+                  ESM format and optimized images, Nuxt websites are indexable
+                  by search engines while giving the feeling of an app to the
+                  end-users.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="nuxt-slider" data-aos="fade-up">
+            <div class="nuxt-slider-text">
+              <p class="nuxt-slider-text-1">Trusted by world-class companies</p>
+              <p class="nuxt-slider-text-2" style="color: gray;">Explore our
+                selection of websites & applications made with Nuxt. F-500
+                companies,<br> creative agencies and freelancers all trust us.</p>
+              <p class="nuxt-slider-text-3">Discover our showcase <i
+                  style="font-size: 1rem;" class="bi bi-chevron-right mx-3"></i>
+              </p>
+            </div>
+            <div class="swiper mySwiper mt-5 ">
+              <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/a5d4be7e33f3dac04b225c201587bae9.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">Ecosia - the search engine that plants...</p>
+                  <a href="ecosia.org" style="color: #00dc82;">ecosia.org</a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/6895f4e58ae239aab6b8f472ad004125.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">Supercharged GitHub Experien</p>
+                  <a href="volta.net" style="color: #00dc82;">volta.net</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/5913ce3a99defcd8778162850ee80657.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">Upwork | The World’s Work Marketplace</p>
+                  <a href="upwork.com" style="color: #00dc82;">upwork.com</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/ea06d80132aa1b1e4fd4c1328df59d0e.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">My Typographic Superpower | Adobe Fonts |
+                    Tags Game</p>
+                  <a href="game.fonts.adobe.com" style="color: #00dc82;">game.fonts.adobe.com</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/768fc07a0e823ef033078fa7ccb5f6bc.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">NBA Rakuten公式 - NBAの試合をLIVEや動画で楽</p>
+                  <a href="nba.rakuten.co.jp" style="color: #00dc82;">nba.rakuten.co.jp</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/90ddab9e41f138afa8ac5cf6e18ccb18.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">TikTok For Business: marketing en TikTok</p>
+                  <a href="tiktok.com" style="color: #00dc82;">tiktok.com</a>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/abf668c42dd1858f8a3580657baef798.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">Discover the best websites of 2020!</p>
+                  <a href="annual.awwwards.com" style="color: #00dc82;">annual.awwwards.com</a>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <img
+                    src="https://res.cloudinary.com/nuxt/image/upload/f_auto,q_auto,w_420,h_315/vue-telemetry/b599af41ce9fab9a3b5d7f19281ccdb8.jpg"
+                    alt="">
+
+                  <p class="mb-1 mt-3">NASA Jet Propulsion Laboratory (JPL) -
+                    Robotic </p>
+                  <a href="jpl.nasa.gov" style="color: #00dc82;">jpl.nasa.gov</a>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <script src="./index.js"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+      AOS.init();
+    </script>
+
+
+          <script>
+    var swiper = new Swiper(".mySwiper", {
+        rewind: true,
+  
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+var swiper2 = new Swiper(".mySwiper2", {
+        rewind: true,
+  
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView:6,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+           var swiper3 = new Swiper(".mySwiper3", {
+        rewind: true,
+  
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView:5,
+            spaceBetween: 30,
+          },
+        },
+      });
+      var swiper4 = new Swiper(".mySwiper4", {
+        rewind: true,
+  
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView:6,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+    </script>
+          <script
+            src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        </body>
+      </html>
