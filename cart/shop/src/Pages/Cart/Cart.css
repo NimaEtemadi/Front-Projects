@@ -1,0 +1,68 @@
+.emptyBasket{
+    margin-top: 2rem;
+ text-align: center;
+
+}
+.emptyBasket p{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.emptyBasket img{
+    width: 300px;
+    margin: 0rem auto; 
+    display: block;
+}
+
+
+.card-index{
+    display: flex;
+    position: relative;
+    z-index: 999;
+    justify-content:left;
+   flex-wrap: wrap; 
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 60px;
+}
+.cart-topbar .title{
+    margin-left: 0rem !important;
+}
+.cart-topbar button{
+    background-color: green;
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem;
+    border: 1px solid white;
+}
+.cart-topbar{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.delete-icon{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+.product-count span{
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+.product-count p{ 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(239, 235, 235, 0.542);
+}
