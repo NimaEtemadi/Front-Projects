@@ -1,0 +1,20 @@
+{ "weather"
+:
+ [
+    {
+        "name":"iran",
+        "temp" :19,
+        "wind-speed":15.5
+    },
+    {
+        "name":"irland",
+        "temp" :11,
+        "wind-speed":15.5
+    },
+    {
+        "name":"canada",
+        "temp" :0,
+        "wind-speed":20.5
+    }
+]
+}
