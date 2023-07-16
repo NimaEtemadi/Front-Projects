@@ -1,0 +1,239 @@
+@media (max-width:950px) {
+    html{
+        font-size: 60%;
+        overflow-x: hidden;
+    }
+
+    .banner-icons-wrapper{
+        margin-right: 1rem;
+    }
+    .banner-icon{
+        margin: 0 2.5rem;
+    }
+    .card{
+        margin-top: 5rem;
+        height: 150vh;
+    }
+    .container-card{
+        flex-direction: column;
+     }
+    .container-card-ltr{
+        flex-direction: column-reverse;
+    }
+    .card-rtl .card-btn{
+        margin: 4rem 0 3rem 0;
+    }
+    .card-video{
+        flex-direction: column;
+    }
+    .card-video-text{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        padding: 2rem 6rem 0 0;
+     }
+     .card-video-img{
+        width: 100%;
+        height: 100%;
+     }
+     .card-video-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+     }
+    .section-readable{
+       margin-top: 3rem;
+    }
+    .section-readable-body-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 35rem);
+        column-gap: 4rem;
+        row-gap: 2rem;
+     }
+     .section-readable-blog{
+        width: 38rem;
+        height: 27rem;
+        border-radius: 1rem;
+      }
+      .blog-post-info{
+        left: 0rem;
+        bottom: 1rem;
+        width: 100%;
+      }
+      .footer-icons-wrapper{
+        flex-wrap: wrap;
+      }
+      .footer .color-bar{
+        width: 100%;
+      }
+      .product-model a{
+        width: 100%;
+        font-size: 1rem;
+      }
+      .footer-icon{
+        padding: 0 5rem;
+    }
+    
+ }
+
+ @media (max-width: 750px) {
+    .intro-content h2{
+        padding: 2rem 3rem;
+        font-size: 2rem;
+    }
+    
+    .banner-icons-wrapper{
+        padding: 0 6rem;
+    }
+    .banner-icon-img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .banner-icon{
+        margin: 0 .6rem;
+    }
+    .card{
+        padding-right: 5rem;
+    }
+    .section-readable{
+        margin: 45rem 0;
+     }
+     .section-readable-body-container{
+         display: grid;
+         grid-template-columns: repeat(1 , 1fr);
+         column-gap: 4rem;
+         row-gap: 2rem;
+      }
+      .section-readable-blog{
+        width: 100%;
+        height: 27rem;
+      }
+      .product-model a{
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      .footer-social-logo{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+ }
+
+ @media (max-width: 550px) {
+ 
+    .header-btns{
+        margin-left: 2rem;
+    }
+    .logo-img{
+        width: 10rem;
+        height: 3rem;
+        margin-top: 1.5rem ;
+    }
+    .intro-content h2{
+        top: 30.5rem;
+        right: -40rem;
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+    }
+    .banner-icon-img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .banner-icon-title{
+        font-size: .8rem;
+        padding-top: 1rem;
+    }
+    .banner-icons-wrapper{
+        width: 100%;
+        padding-right: 3rem;
+        text-align: center;
+    }
+    .banner-icon{
+        margin: 0 .5rem;
+    }
+    .card-header h2{
+        font-size: 1.8rem;
+     }
+     .card-header p{
+        font-size: 1rem;
+     }
+     .card-body{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 3rem;
+     }
+     .card-header{
+        margin-left: 13rem;
+        margin-bottom: 2rem;
+     }
+     .card-body p {
+        width: 25rem;
+        margin-top: 1rem ;
+     }
+     .card-btn a{
+        padding: 1.2rem 1rem;
+        font-size: 1.2rem;
+        margin: 1rem 0 1rem 0;
+     }
+     .card-right-text-rtl{
+        align-items: center;
+        padding-left: 5rem;
+     }
+     .card-left-text-ltr{
+        align-items: center;
+        padding-left: 6rem;
+     }
+     .big-img-card {
+        width: 35rem;
+        margin-right: 5rem;
+     }
+     .big-img-card img{
+       width: 100%;
+     }
+     .small-imgs-card{
+        width: 35rem;
+        margin-top: 2rem;
+        margin-right: 5rem;
+     }
+     .small-imgs-card img{
+        width: 48%;
+     }
+     .card-video-description{
+        width: 28rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+        padding-left: 2rem;
+     }
+     .card-video-text{
+        height: 100vh;
+        margin-bottom: 3rem;
+        padding: 2rem 3rem 0 0;
+        width: 100%;
+     }
+ 
+     .section-readable-title{
+        margin-top: 30rem;
+     }
+     .section-title{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .section-subtitle{
+        font-size: 1rem;
+    }
+     .section-readable-blog{
+        margin-right: 2rem;
+    }
+    .section-readable{
+        width: 100%;
+        height: 250vh;
+        padding-bottom: 30rem;
+      }
+   
+
+
+ }
