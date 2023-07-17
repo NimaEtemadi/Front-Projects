@@ -8,7 +8,14 @@
    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.76);
    -moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.76);
 }
-
+.color-bar{
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    right: 0;
+    height: .1rem;
+    box-shadow: -72vw 0 0 8px #78be1e, -65vw 0 0 8px #019e43, -58vw 0 0 8px #0182c6, 0vw 0 0 8px #1d4f9b;
+}
 .header__wrap{
     background-color: var(--white-color);
     display: flex;
