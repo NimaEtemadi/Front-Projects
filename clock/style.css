@@ -1,0 +1,247 @@
+body
+{
+    padding-top: 8rem;
+    perspective:600px;
+}
+article 
+{
+    width:300px;
+    height:300px;
+    background:#ccc;
+    border-radius:50%;
+    border:2px solid black;
+    margin:30px auto;
+    overflow:hidden;
+    position:relative;
+}
+article header 
+{
+    background:pink;
+    position:relative;
+}
+article header span 
+{
+    position:absolute;
+    font-size:21px;
+}
+article header .spn1
+{
+    left:45%;
+    top:0;
+}
+article header .spn2
+{
+    left:23%;
+    top:20px;
+}
+article header .spn3
+{
+    left:8%;
+    top:73px;
+}
+article header .spn4
+{
+    right:27%;
+    top:20px;
+}
+article header .spn5
+{
+    right:8%;
+    top:73px;
+}
+
+
+article section
+{
+    background:yellow;
+    position:relative;
+}
+article section span
+{
+    position:absolute;
+    font-size:21px;
+}
+article section .spn6
+{
+    top:39%;
+    left:10px;
+}
+article section .spn7
+{
+    top:39%;
+    right:10px;
+}
+
+
+
+
+
+
+article footer
+{
+    background:violet;
+}
+
+
+article footer
+{
+    position:relative;
+}
+article footer span 
+{
+    position:absolute;
+    font-size:21px;
+}
+article footer .spn1
+{
+    left:47%;
+    bottom:0;
+}
+article footer .spn2
+{
+    left:23%;
+    bottom:27px;
+}
+article footer .spn3
+{
+    left:8%;
+    top:3px;
+}
+article footer .spn4
+{
+    right:26%;
+    bottom:22px;
+}
+article footer .spn5
+{
+    right:9%;
+    top:6px;
+}
+
+
+article header,article section,article footer
+{
+    width:100%;
+    height:33.333%;
+}
+#clock
+{
+    width:169px;
+    height:4px;
+    background:red;
+    position:absolute;
+    left:21%;
+    top:152px;
+}
+
+
+.all
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:transparent;
+    transform:rotateZ(90deg);
+}
+#clock2
+{
+    width:103px;
+    height:8px;
+    position:absolute;
+    left:16%;
+    top:131px;
+}
+.inclock
+{
+    width:0;
+    float:left;
+    border-right:21px solid green;
+    border-top:9px solid transparent;
+    border-bottom:9px solid transparent;
+    position:relative;
+    top:-7px;
+    left:-19px;
+}
+.all3
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    transform:rotateZ(90deg);
+}
+#clock2 .one
+{
+    width:0;
+    float:left;
+    border-right:21px solid red;
+    border-top:9px solid transparent;
+    border-bottom:9px solid transparent;
+    position:relative;
+    top:13px;
+    left:-11px;
+}
+#clock2 .two
+{
+    width:90%;
+    background:blue;
+    height:100%;
+    box-sizing:border-box;
+    float:right;
+}
+
+
+
+
+.all2
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:transparent;
+    transform:rotateZ(180deg);
+}
+#clock3
+{
+    width:60px;
+    height:8px;
+    position:absolute;
+    left:32%;
+    top:128px;
+}
+#clock3 .one
+{
+    width:0;
+    float:left;
+    border-right:21px solid brown;
+    border-top:9px solid transparent;
+    border-bottom:9px solid transparent;
+    position:relative;
+    top:13px;
+    left:-11px;
+}
+#clock3 .two
+{
+    width:90%;
+    background:blue;
+    height:100%;
+    box-sizing:border-box;
+    float:right;
+}
+
+
+.ball 
+{
+    position:absolute;
+    width:10%;
+    height:10%;
+    border-radius:50%;
+    left:44%;
+    top:44%;
+    background:white
+}
