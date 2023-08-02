@@ -1,0 +1,145 @@
+.menu-bar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.menu-bar::-webkit-scrollbar-track {
+  background: #cccbff;
+}
+
+/* Handle */
+.menu-bar::-webkit-scrollbar-thumb {
+  background: rgb(77, 73, 73);
+}
+
+/* Handle on hover */
+.menu-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.overview::before {
+  content: "";
+  background-color: #ffbc99;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.overview-color::before {
+  background-color: #cabdff;
+}
+.popular::before {
+  content: "";
+  background-color: #b1e5fc;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.bc-main {
+  background-color: #f4f4f4;
+}
+.main {
+  padding: 20px 0 0 340px;
+}
+
+.bc-other {
+  background-color: #fcfcfc;
+}
+
+.Overview-position {
+  z-index: 1;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 340px;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  background: #fcfcfc;
+  box-shadow: inset 1px 0px 0px #f4f4f4, inset 0 -1px 0px #efefef;
+  justify-content: space-between;
+}
+
+.body-dashboard {
+  display: flex;
+  gap: 4px;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .body-dashboard {
+    display: block;
+  }
+}
+.navbar-1100{
+  position: fixed;
+  display: none;
+  padding-top: 24px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  width: 80px;
+  background: #fcfcfc;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  padding: 24px;
+  background: #fcfcfc;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .menu {
+    display:none;
+  }
+  .main {
+    padding-left: 76px;
+  }
+  .header {
+    left: 86px;
+  }
+  .navbar-1100{
+    display:flex;
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .menu {
+    display:none;
+  }
+  .main {
+    padding-left: 0px;
+  }
+  .header {
+    left: 0px;
+  }
+  .navbar-1100{
+    display:none;
+  }
+}
+
+
+.customers2:hover{
+  background-color: #fcfcfc;
+
+}
+.customers2:hover ~ .customers1{
+  background-color: #faaaaa;
+}
