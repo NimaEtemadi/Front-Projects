@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon-facebook" width="24"  height="24" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-facebook">
+<path d="M8.5 4.667c0-.736.597-1.333 1.333-1.333h.667c.368 0 .667-.298.667-.667S10.868 2 10.5 2h-.667C8.36 2 7.166 3.194 7.166 4.667V6H5.5c-.368 0-.667.298-.667.667s.298.667.667.667h1.667v6c0 .368.298.667.667.667s.667-.298.667-.667v-6h1.667c.368 0 .667-.298.667-.667S10.535 6 10.166 6H8.5V4.667z"></path>
+</symbol></defs>
+                        <use xlink:href="#icon-facebook" fill="#6F767E"></use>
+                      </svg>

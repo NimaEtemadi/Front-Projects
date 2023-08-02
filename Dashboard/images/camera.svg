@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon-video-recorder" width="24"  height="24" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-video-recorder">
+<path d="M9.333 3.333a2 2 0 0 1 2 2v.381l1.225-.875c.883-.63 2.108 0 2.108 1.085v4.151c0 1.085-1.226 1.715-2.108 1.085l-1.225-.875v.381a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V5.333a2 2 0 0 1 2-2h6zm0 1.333h-6c-.368 0-.667.298-.667.667h0v5.333c0 .368.298.667.667.667h0 6c.368 0 .667-.298.667-.667h0V5.333c0-.368-.298-.667-.667-.667h0zm4 1.258l-2 1.429v1.294l2 1.429V5.924z"></path>
+</symbol></defs>
+                          <use xlink:href="#icon-video-recorder" fill="#272B30"></use>
+                        </svg>

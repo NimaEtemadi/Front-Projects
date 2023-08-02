@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon-info" width="16"  height="16" ><defs><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-info">
+<path d="M8.001 1.334a6.67 6.67 0 0 1 6.667 6.667 6.67 6.67 0 0 1-6.667 6.667 6.67 6.67 0 0 1-6.667-6.667 6.67 6.67 0 0 1 6.667-6.667zm0 6c-.368 0-.667.298-.667.667h0v3.334c0 .368.298.667.667.667s.667-.298.667-.667h0V8.001c0-.368-.298-.667-.667-.667zm0-2.667c-.368 0-.667.298-.667.667s.298.667.667.667.667-.298.667-.667-.298-.667-.667-.667z"></path>
+</symbol></defs>
+                              <use xlink:href="#icon-info" fill="#9A9FA5"></use>
+                            </svg>
