@@ -1,4 +1,7 @@
 //hamburger menu
+
+prompt('sal')
+
 const ham = document.querySelector('.ham');
 const nav = document.querySelector('.menu');
 
