@@ -1,0 +1,47 @@
+.main {
+    margin-top: 2rem;
+    height: auto;
+    display: grid;
+    align-items: start;
+    align-content: start;
+    gap: 4rem;
+}
+
+.main p{
+    font-family: var(--font-lalezar);
+    font-size: 3rem;
+}
+
+/* Main Bottom */
+
+
+.main-bottom{
+    margin-bottom: 4rem;
+    background-color: var(--white-50);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: grid;
+    gap: 2rem;
+}
+
+.main-bottom p {
+    font-family: var(--font-lalezar);
+    font-size: 2.5rem;
+}
+
+.table-wrapper table,
+td,
+th {
+    border: 2px solid var(--white-200);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* End Main Bottom */

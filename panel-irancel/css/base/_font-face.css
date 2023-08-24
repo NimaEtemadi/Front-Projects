@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../../../fonts/Vazirmatn-Medium.ttf')format('truetype'),
+    url('../../../fonts/Vazirmatn-Regular.ttf')format('truetype')
+}
+@font-face {
+    font-family: 'gandom';
+    src: url('../../../fonts/Gandom.eot')format('eot'),
+    url('../../../fonts/Gandom.ttf')format('truetype'),
+    url('../../../fonts/Gandom.woff')format('woff')
+}
+
+@font-face {
+    font-family: 'lalezar';
+    src: url('../../../fonts/Lalezar-Regular.ttf')format('truetype')
+}

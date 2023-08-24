@@ -1,0 +1,19 @@
+.btn{
+    padding: 0.5rem 2rem;
+    border:none ;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--font-lalezar);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btn-yellow{
+    box-shadow: 0 0 8px var(--gold-400);
+    color: var(--white-50);
+    background-color: var(--gold-400);
+}
+
+.btn:hover{
+    filter: brightness(80%);
+}
