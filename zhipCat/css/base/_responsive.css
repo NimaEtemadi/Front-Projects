@@ -1,0 +1,49 @@
+@media only screen and (max-width: 75em) {}
+
+@media only screen and (max-width: 62em) {}
+
+@media only screen and (max-width: 48em) {
+    .u-container {
+        width: 90%;
+    }
+
+    .header-list {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    .u-container {
+        width: 100%;
+    }
+
+    .header-wrapper {
+        height: 80.9rem;
+        padding: 2rem;
+    }
+
+    .header-navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-logo {
+        font-size: 2rem;
+    }
+
+    .header-wrapper .u-paragraph,
+    .header-wrapper .header-titel {
+        text-align: center;
+    }
+
+    .footer-list {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-phone,
+    .contact-email,
+    .contact-message {
+        font-size: 1.3rem;
+    }
+
+}
