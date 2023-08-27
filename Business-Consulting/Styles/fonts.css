@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("../Fonts/NexaRegular.otf") format("opentype")
+}
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../Fonts/Nexa\ Bold.otf") format("opentype")
+}
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../Fonts/Nexa\ Light.otf") format("opentype")
+}
+@font-face {
+    font-family: "Norwester";
+    src: url("../Fonts/norwester.otf") format("opentype")
+}

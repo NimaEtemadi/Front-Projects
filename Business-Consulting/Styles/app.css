@@ -1,0 +1,809 @@
+
+/* app */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Nexa";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Header & Nav */
+
+.header {
+    padding: 5rem;
+    background-color: #000000;
+    height: 120vh;
+    background-image: url("../Images/header-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 115rem;
+    background-position-x: 50rem;
+    background-position-y: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    position: relative;
+}
+
+.nav__logo {
+
+}
+
+.nav__photo {
+
+}
+
+.nav-menu {
+    display: flex;
+    gap: 6rem;
+}
+
+.nav-menu__item {
+
+}
+
+.nav-menu__item--active {
+
+}
+
+.nav-menu__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Nexa Light";
+    font-size: 1.8rem;
+}
+
+.nav-menu__link--active {
+    color: #ff0000;
+}
+
+.nav-submenu {
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    display: block;
+
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 4rem;
+}
+
+nav ul ul li {
+    display: block;
+    border: 1px solid #fff;
+    padding: 1rem;
+    width: 21rem;
+}
+
+nav li:hover > ul {
+    display: inherit;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.nav-submenu * {
+    text-align: center;
+}
+
+nav span {
+    display: none;
+}
+
+nav li:not(.exclude):hover span {
+    display: inline-block;
+    transform: scale(1.5) rotate(90deg);
+}
+
+.header-content {
+    color: #ffffff;
+    max-width: 78rem;
+    margin-top: 28rem;
+    z-index: 100;
+    position: relative;
+}
+
+.header__title {
+    font-family: "Norwester";
+    font-size: 6.5rem;
+    line-height: 1.3;
+}
+
+.header__caption {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Nexa Bold";
+    font-size: 2.4rem;
+    padding: 3rem;
+    border: .3rem solid #ff0000;
+}
+
+.header__link:hover {
+    background-color: #ff0000;
+    border: .3rem solid #fff;
+    color: #000;
+}
+
+
+.nav-toggle__btn {
+    display: none;
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: .3rem solid #ff0000;
+    border-radius: 2rem;
+}
+
+.nav-toggle__line {
+    width: 4rem;
+    height: 0.4rem;
+    background-color: #ff0000;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.nav-toggle__line::before,
+.nav-toggle__line::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 0.35rem;
+    background-color: #ff0000;
+    border-radius: 2rem;
+}
+
+.nav-toggle__line::after {
+    bottom: 1.2rem;
+    transition: all 120ms ease-in;
+}
+
+.nav-toggle__line::before {
+    top: 1.2rem;
+    transition: all 120ms ease-in;
+}
+
+.nav-toggle__btn--open .nav-toggle__line {
+    background-color: transparent;
+}
+
+.nav-toggle__btn--open .nav-toggle__line::before {
+    transform: translateY(-1.2rem) rotate(-45deg) ;
+}
+
+.nav-toggle__btn--open .nav-toggle__line::after {
+    transform: translateY(1.2rem) rotate(45deg) ;
+}
+
+/* Mobile Menu */
+
+.mobile-menu__wrapper {
+    position: fixed;
+    top: 0;
+    left: -25rem;
+    bottom: 0;
+    width: 25rem;
+    background-color: #000;
+    box-shadow: 0 0 0.4rem #ff0000;
+    padding: 2.5rem;
+    transition: all 0.3 ease;
+    z-index: 100;
+}
+
+.mobile-menu__title {
+    color: #f0f0f0;
+    font-family: "Norwester";
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.mobile-menu {
+    margin-top: 5rem;
+    position: relative;
+    transition: all 0.3 ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.mobile-menu__item  {
+
+}
+
+.mobile-menu__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: "Nexa Light";
+    font-size: 1.8rem;
+}
+
+.mobile-menu__link--active {
+
+}
+
+.mobile-submenu {
+
+}
+
+.mobile-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mobile-menu a {
+    display: block;
+
+}
+
+.mobile-menu > ul > ul {
+    display: none;
+    position: absolute;
+    padding-top: 1rem;
+
+}
+
+.mobile-menu ul ul li {
+    display: block;
+    border: 1px solid #fff;
+    padding: 1rem;
+}
+
+.mobile-menu li:hover > ul {
+    display: inherit;
+}
+
+.mobile-menu ul li a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.mobile-submenu * {
+    text-align: center;
+}
+
+.mobile-submenu {
+    position: relative;
+    right: -20rem;
+    top: 0;
+}
+
+.mobile-menu span {
+    display: none;
+}
+
+.mobile.menu li:not(.exclude):hover span {
+    display: inline-block;
+    transform: scale(1.5) rotate(90deg);
+}
+
+.mobile-menu__link--active {
+    color: #ff0000;
+}
+
+/* Intro Section */
+
+.intro {
+    margin-top: 20rem;
+    background-image: url("../Images/Mask\ Group.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20rem;
+}
+
+.intro-titles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.intro__title {
+    font-family: "Norwester";
+    font-size: 7.2rem;
+    max-width: 92rem;
+    line-height: 1.2;
+}
+
+.intro__caption {
+    max-width: 104rem;
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.intro-content {
+    margin-top: 15rem;
+    margin-right: 5rem;
+}
+
+.intro-content__title {
+    font-family: "Norwester";
+    font-size: 3.4rem;
+    margin-left: 3rem;
+}
+
+.intro-content__description {
+    font-family: "Nexa";
+    font-size: 2.2rem;
+    margin-left: 3rem;
+}
+
+.i1 {
+    border-left: 3px solid #F48400;
+}
+.i2 {
+    border-left: 3px solid #3F01EC;
+}
+.i3 {
+    border-left: 3px solid #FF0000;
+}
+
+.i1-2 {
+    border-bottom: 3px solid #F48400;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.i2-2 {
+    border-bottom: 3px solid #3F01EC;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.i3-2 {
+    border-bottom: 3px solid #FF0000;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+/* Services */
+
+.services {
+    background-image: url("../Images/3rd-section-bg.jpg");
+    background-color: #1C1265CC;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+
+.services-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.services__title {
+    font-family: "Norwester";
+    font-size: 7.2rem;
+    line-height: 1.2;
+}
+
+.services__caption {
+    max-width: 75rem;
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.services-content {
+    margin-top: 25rem;
+    margin-right: 5rem;
+}
+
+.services__icon {
+    fill: #fff;
+}
+
+.services-content__title {
+    font-family: "Norwester";
+    font-size: 3.4rem;
+}
+
+.services-content__description {
+    font-family: "Nexa";
+    font-size: 2.8rem;
+}
+
+/* Personnel */
+
+.personnel {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    background-color: #DCDCDC;
+    height: 140vh;
+    position: relative;
+}
+
+.personnel-content {
+
+}
+
+
+.personnel__main-title {
+    font-family: "Norwester";
+    font-size: 4rem;
+    margin-top: 8rem;
+}
+
+.personnel-content {
+    padding: 3rem;
+    cursor: pointer;
+}
+
+.personnel-content--active {
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+}
+
+
+.personnel__title {
+    font-family: "Norwester";
+    font-size: 2.4rem;
+    border-top: .3rem solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.personnel__title--active {
+    border-top: 0.3rem solid #ff0000;
+}
+.personnel__caption {
+    font-family: "Nexa";
+    font-size: 1.8rem;
+}
+
+.personnel .row {
+    margin-top: 15rem;
+}
+
+.personnel__information {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+        position: absolute;
+        top: 25.5rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+    }
+
+.personnel__infomation--show {
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+    }
+
+.personnel__photo {
+    width: 100%;
+    height: 100%;
+}
+
+.personnel__information1 {
+    width: 100%;
+    height: 100%;
+}
+
+.personnel__information2 {
+    font-family: "Nexa";
+    font-size: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    margin-left: -5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 3px solid #ff0000;
+}
+
+
+.personnel__description {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.personnel-menu {
+    margin-left: 3rem;
+}
+
+.personnel-menu__item {
+    list-style-type: disc;
+}
+
+/* ads */
+
+.ads {
+    margin-top: 30rem;
+}
+
+.ads-content {
+
+}
+
+.ads-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.ads__title {
+    font-family: "Norwester";
+    font-size: 7.2rem;
+}
+
+.ads__subtitle {
+    font-family: "Nexa";
+    font-size: 3rem;
+    color: #ff0000;
+    max-width: 71rem;
+}
+
+.ads__description {
+    font-family: "Nexa";
+    font-size: 3.4rem;
+    max-width: 70rem;
+}
+
+.ads-content {
+
+}
+
+.ads-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-top: 30rem;
+}
+
+.ads__logo {
+
+}
+
+/* footer */
+
+.footer {
+    margin-top: 30rem;
+    padding-bottom: 10rem;
+}
+
+.footer-message {
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__title {
+    font-family: 'Nexa';
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+.footer__caption {
+    font-family: 'Nexa';
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.footer__photo {
+    width: 90%;
+    cursor: pointer;
+}
+
+.footer__photo:hover {
+    transform: scale(0.9);
+}
+
+.footer-message__caption {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.ceo {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+    border-bottom: 1px solid #000;
+    color: rgba(113, 113, 113, 1);
+}
+
+.socials {
+
+}
+
+.footer-content {
+    margin-top: 5rem;
+}
+
+.footer__logo {
+
+}
+
+.footer-content__caption {
+    max-width: 30rem;
+    margin-top: 3rem;
+}
+
+.menu__title {
+    font-family: "Nexa";
+    font-size: 3.6rem;
+    font-weight: 700;
+
+}
+
+.footer-menu {
+
+}
+
+.footer-menu__item {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+/* contact / last frame */
+
+.contact-content {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-content__titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.contact__caption {
+    font-family: "Nexa";
+    font-size: 3.4rem;
+}
+
+.contact-connection {
+    margin-top: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+    gap: 2rem;
+}
+
+.contact-connection2 {
+    margin-top: 15rem;
+}
+
+.contact__connection-title {
+    font-family: "Nexa";
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact__connection-caption {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.contact__socials-title {
+    font-family: "Nexa";
+    font-size: 2.4rem;
+}
+
+.google-plus {
+    max-width: 15rem;
+    margin-left: 28rem;
+}
+
+.contact-form {
+
+}
+
+.contact-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.vertical-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-family: 'Nexa';
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.contact-input {
+    border: none;
+    outline: none;
+    background-color: rgba(196, 196, 196, 1);
+    padding: 2rem 5rem;
+}
+
+.contact-textarea {
+    resize: vertical;
+    border: none;
+    outline: none;
+    background-color: rgba(196, 196, 196, 1);
+    width: 100%;
+    padding: 2rem 5rem;
+}
+
+.contact-button {
+    border: none;
+    outline: none;
+    background-color: rgba(196, 196, 196, 1);
+    padding: 2rem 5rem;
+    font-family: 'Nexa';
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.vita {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
