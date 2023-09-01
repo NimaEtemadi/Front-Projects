@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="./Styles/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="Styles/main.css" />
+        <title>کتاب آموزشی برنامه نویسی</title>
+    </head>
+    <body>
+        <!---------------------------:start:------------------------------>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top z-3 bg-white">
+            <div class="container">
+                <!-- Brand -->
+              <a class="navbar-brand" href="#intro">
+                <i class="bi-terminal"></i>
+                <span class="lead">
+                  کتاب آنلاین برنامه نویسی
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-start align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricing">خرید</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review">نظرات  خریداران</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">درباره کتاب</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">تماس با نویسنده</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Intro -->
+        <section id="intro">
+            <div class="container">
+                <div
+                 class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h1>
+                            <div class="display-2">آموزش زبان C</div>
+                            <div class="display-5 text-muted">به زبان ساده</div>
+                        </h1>
+                        <p class="lead my-4 text-muted">در این کتاب مبانی مهم زبان سی پوشش داده شده است</p>
+                        <a href="#" class="btn btn-lg btn-dark">خرید نسخه فیزیکی</a>
+                        <a href="#" class="btn btn-lg btn-outline-dark">مطالعه رایگان</a>
+                        <!-- Sidebar shopping cart - offcanvas  -->
+                        <a href="#sidebar" class="text-decoration-none text-muted d-block mt-4" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" >
+                          <i class="bi bi-search"></i>
+                          کتاب های دیگر از این نویسنده؟
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <img
+                        src="./Assets/images/book-Single.png"
+                        alt="book-cover"
+                        class="img-fluid user-select-none">
+
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing  -->
+        <section id="pricing" class="bg-light">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="text-center">
+                    <h1>انواع روش دسترسی به این کتاب</h1>
+                    <p class="lead text-muted">توصیه ما این است با هر کدام راحت هستید به مطالعه ادامه دهید</p>
+                </div>
+
+                <!-- Card ROW -->
+                <div class="row row-cols-md-2 row-cols-sm-1 my-2 justify-content-center align-content-center g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-1 w-auto h-100 rounded-4 overflow-hidden" style="width: 18rem;">
+                            <div class="card-body text-center py-4">
+                              <h5 class="card-title">مطالعه رایگان</h5>
+                              <p class="lead card-subtitle">بصورت آنلاین میتوانید مطالعه کنید.</p>
+                              <p class="display-5 fw-bold my-4 text-primary">رایگان</p>
+                              <p class="card-text mx-4 d-none d-lg-block text-muted">این کتاب بصورت آزاد در اینترنت منتشر شده است و دسترسی همگان به این کتاب رایگان است</p>
+                              <a href="#" class="btn btn-outline-primary mt-3 btn-lg">مطالعه رایگان</a>
+                      
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-1 w-auto h-100 border-primary rounded-4 overflow-hidden" style="width: 18rem;">
+                            <div class="card-header text-center bg-primary text-white">محبوب ترین انتخاب</div>
+                            <div class="card-body text-center py-4">
+                              <h5 class="card-title">نسخه فیزیکی کتاب</h5>
+                              <p class="lead card-subtitle">کتاب بصورت چاپ رنگی با ارسال رایگان</p>
+                              <p class="display-5 fw-bold my-4 text-primary">120 هزار تومان</p>
+                              <p class="card-text mx-4 d-none d-lg-block text-muted">نسخه با کیفیت کتاب همراه با یک یادداشت از نویسنده</p>
+                              <a href="#" class="btn btn-primary mt-3 btn-lg">خرید آنلاین</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card  border-1 w-auto h-100 rounded-4 overflow-hidden" style="width: 18rem;">
+                            <div class="card-body text-center py-4">
+                              <h5 class="card-title">پلن حامیان</h5>
+                              <p class="lead card-subtitle">نسخه فیزیکی کتاب و درج اسم شما در قسمت حامیان</p>
+                              <p class="display-5 fw-bold my-4 text-primary">500 هزار تومان</p>
+                              <p class="card-text mx-4 d-none d-lg-block text-muted">این بخش مناسب کسانی است که میخواهند حمایت خودشان را از انتشار آزاد این کتاب نشان دهند </p>
+                              <a href="#" class="btn btn-outline-primary mt-3 btn-lg">حامی باش</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+          <div class="container">
+            <div class="text-center">
+              <h2>درباره کتاب برنامه نویسی به زبان C</h2>
+              <p class="lead text-muted">پاسخ به برخی سوالات متداول در رابطه با کتاب</p>
+            </div>
+            <div class="row my-4 g-4 justify-content-around align-items-center">
+              <div class="col-6 col-lg-4"> 
+                <img src="./Assets/images/book-tablet.png" alt="ebook thumbnails" class="img-fluid">
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion" id="chapters" style="height: 200px;">
+                  <div class="accordion-item">
+                    <h1 class="accordion-header" id="acc-header-1">
+                      <button
+                       class="accordion-button"
+                       type="button"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#chapter-1"
+                       aria-expanded="true"
+                       aria-controls="chapter-1"
+                       >این کتاب چه ویژگی منحصر به فردی دارد؟</button>
+                    </h1>
+                    <div
+                     class="accordion-collapse collapse show"
+                     id="chapter-1"
+                     aria-labelledby="#heading-1"
+                     data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                      <p>اینجا از بات نویس</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h1 class="accordion-header" id="acc-header-2">
+                      <button
+                       class="accordion-button"
+                       type="button"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#chapter-2"
+                       aria-expanded="true"
+                       aria-controls="chapter-2"
+                       >این کتاب برای چه کسانی مناسب است؟</button>
+                    </h1>
+                    <div
+                     class="accordion-collapse collapse"
+                     id="chapter-2"
+                     aria-labelledby="#heading-2"
+                     data-bs-parent="#chapters"
+
+                    >
+                    <div class="accordion-body">
+                      <p>مناسب بودنp>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h1 class="accordion-header" id="acc-header-3">
+                      <button
+                       class="accordion-button"
+                       type="button"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#chapter-3"
+                       aria-expanded="true"
+                       aria-controls="chapter-3"
+                       >چرا باید بجای زبان های راحت تر ، سی یاد بگیریم؟</button>
+                    </h1>
+                    <div
+                     class="accordion-collapse collapse"
+                     id="chapter-3"
+                     aria-labelledby="#heading-3"
+                     data-bs-parent="#chapters"
+                    >
+                    <div class="accordion-body">
+                      <p>نمی دونم</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- reviews -->
+        <section id="review" class="bg-light">
+          <div class="container">
+            <div class="text-center">
+              <h2><i class="bi bi-stars"></i> نظرات برخی خریداران</h2>
+              <p class="lead">لطفا اگر نظری دارید به من ایمیل بزنید در اینجا درج میکنم.</p>
+            </div>
+            <div class="row justify-content-center my-5">
+              <div class="col-lg-8">
+                <ul class="list-group">
+                  <li class="list-group-item my-3 list-group-item-primary">
+                    <h5 class="mb-1">کتابی رفرنس برای تمام زندگی</h5>
+                    <div class="pb-1">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="mb-1">کتابی فوق العاده که شما رو با زبان سی آشنا میکند در حین حال زندگی کرذن و لایف استایل یک برنامه نویس موفق را به شما یاد می دهد حتما پیشنهاد میکنم</p>
+                    <small>نوشته شده توسط مهدی حضرتی</small>
+                  </li>
+                  <li class="list-group-item my-3">
+                    <h5 class="mb-1">بهترین کتابی که خوندم</h5>
+                    <div class="pb-1">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="mb-1">
+                      سی آشنا میکند در حین حال زندگی کرذن و لایف استایل یک برنامه نویس موفق را به شما یاد می دهد حتما پیشنهاد میکنم
+                    </p>
+                    <small>نوشته شده توسط امین</small>
+                  </li>
+                  <li class="list-group-item my-3 list-group-item-secondary">
+                    <h5 class="mb-1">نظر شما سه</h5>
+                    <div class="pb-1">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                    <p class="mb-1">لورم
+                    </p>
+                    <small>یک نویسنده رندم</small>
+                  </li>
+                  <li class="list-group-item my-3">
+                    <h5 class="mb-1">نویسنده آخر</h5>
+                    <div class="pb-1">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="mb-1">چی بگم</p>
+                    <small>یک نویسنده رندم دیگر</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact   -->
+        <section id="contact">
+          <div class="container">
+            <!-- title -->
+            <div class="text-center">
+              <h2>تماس کاری با نویسنده</h2>
+              <p class="lead">از این قسمت میتوانید با ارسال درخواست همکاری به نویسنده پزوژه های مرتبط خود را جلو ببرید.</p>
+            </div>
+            <div class="row justify-content-center my-5">
+              <div class="col-lg-6">
+                <!-- contact form -->
+                <form>
+                  <!-- Name -->
+                  <label for="name" class="form-label">نام شما</label>
+                  <div class="input-group mb-4">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input type="text" id="name" class="form-control" placeholder="برای مثال  مهدی">
+                    <span class="input-group-text">
+                      <span class="tt" data-bs-placment="top" title="Your Full Name">
+                        <i class="bi bi-question-circle text-muted"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <!-- Email -->
+                  <label for="email" class="form-label">آدرس ایمیل شما</label>
+                  <div class="input-group mb-4">
+                    <span class="input-group-text">
+                      <i class="bi bi-envelope-at-fill"></i>
+                    </span>
+                    <input type="email" id="email" class="form-control" placeholder="برای مثال mahdi@gmail.com">
+                    <span class="input-group-text">
+                      <span class="tt" data-bs-placment="top" title="your main email i'll back you">
+                        <i class="bi bi-question-circle text-muted"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <!-- Subject -->
+                  <label for="subject" class="form-label">لطفا موضوع ایمیل  را انتخاب کنید</label>
+                  <div class="input-group mb-4">
+                    <span class="input-group-text">
+                      <i class="bi bi-question-circle-fill"></i>
+                    </span>
+                    <select id="subject" class="form-select">
+                      <option value="value1" selected>موضوع</option>
+                      <option value="value2">موضوع</option>
+                      <option value="value3">موضوع</option>
+                      <option value="value4">موضوع</option>
+                      <option value="value5">موضوع</option>
+                    </select>
+                    <span class="input-group-text">
+                      <span class="tt" data-bs-placment="top" title="main subject you want to conntect me">
+                        <i class="bi bi-question-circle text-muted"></i>
+                      </span>
+                    </span>
+                  </div>
+
+                  <!-- Query -->
+                  <div class="form-floating mb-4 mt-5">
+                    <textarea id="query" style="height: 140px;" class="form-control" placeholder="e.g. hired for our compony named Google"></textarea>
+                    <label for="query">درخواست را اینجا بنویسید</label>
+                  </div>
+                  <!-- Submit -->
+                  <div class="text-center mb-4">
+                    <button type="button" class="btn btn-dark">ارسال درخواست</button>
+                  </div>
+
+                  </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- modal trigger -->
+        <section id="news" class="bg-light">
+          <div class="container">
+            <div class="text-center">
+              <h2>در جریان آپدیت کتاب</h2>
+              <p class="lead">از اخبار کتاب با خبر باشید</p>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <p class="text-muted my-4 px-4">لطفا در خبرنامه کتاب عضو بشید تا هر هفته چند ایمیل ترفند گونه در رابطه با سی برای شما ارسال کنیم.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register-modal" >عضویت در خبرنامه</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Register Modal -->
+        <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="modal title" aria-hidden="true">
+          <!-- Modal -->
+          <div class="modal-dialog">
+            <!-- content -->
+            <div class="modal-content">
+              <!-- modal header -->
+              <div class="modal-header">
+                <h5 class="modal-title">در خبر نامه ثبت نام کنید</h5>
+              </div>
+              <!-- modal body -->
+              <div class="modal-body">
+                <p>یک متن ترغیب کننده برای ثبت نامه در خبرنامه مرتبط با کتاب</p>
+                <label for="modal email" class="form-label">ایمیل اصلی شما</label>
+                <input name="modal-email" type="email" class="form-control" placeholder="برای مثال mahdi@gmail.com">
+
+              </div>
+              <!-- modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" aria-label="Close" data-bs-dismiss="modal">بستن</button>
+                <button type="button" class="btn btn-primary" aria-label="Close" data-bs-dismiss="modal">ثبت نام</button>
+                <!-- end modal -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar / offcanvas -->
+        <div class="offcanvas offcanvas-start" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+          <!-- sidebar header -->
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">
+              کتاب های دیگر من
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- sidebar body -->
+          <div class="offcanvas-body">
+            <p class="px-1">یک لیستی از کتاب های این نویسنده</p>
+            <!-- dropdown button -->
+            <div class="dropdown mt-5">
+              <button type="button" class="btn btn-dark dropdown-toggle" id="book-dropdown" data-bs-toggle="dropdown">نمایش لیست کتاب ها</button>
+              <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li>
+                  <a class="dropdown-item" href="#book1">کتاب  1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#book2">کتاب  2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#book3">کتاب  3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!---------------------------:end..:------------------------------>
+        <script src="./JavaScript/bootstrap.bundle.min.js"></script>
+        <script type="module" src="./JavaScript/app.js"></script>
+    </body>
+</html>
+
+
