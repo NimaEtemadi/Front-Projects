@@ -1,0 +1,64 @@
+body{
+background-color: rgb(0, 0, 0);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.login-card{
+    display: flex;
+    flex-direction: column;
+}
+.login-card__input{
+    text-indent: 10px;
+    margin: .8rem;
+    outline: none;
+    border: 8px solid #9d00ff ;
+    height: 3rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    transition: all 1s ease;
+}
+.login-card__btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #9d00ff;
+    border: none;
+    transition: all 1s ease;
+    color:white;
+}
+.login-card__btn:hover{
+background-color: white;
+color: black;
+transition: all .5s ease;
+cursor: pointer;
+}
+textarea{
+    border: 8px solid #9d00ff ;
+    margin: .8rem;
+    outline: none;
+    height: 16rem;
+    width: 25rem;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+}
+@media only screen and (max-width:448px) {
+    .container{
+      width: 100%;
+    }
+    .login-card{
+       width: 100%;
+       align-items: center  ;
+    }
+    .login-card__input{
+        width: 91%;
+    }
+    textarea{
+        width: 91%;
+    }
+    .login-card__btn{
+        width: 100%;
+    }
+}
