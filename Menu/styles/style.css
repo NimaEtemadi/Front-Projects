@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-circle: white;
+  --clr-btn: white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Button Hamburger */
+.btn-nav {
+  position: fixed;
+  right: 3rem;
+  top: 3rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 1rem;
+  z-index: 10;
+
+  --btn-color: white;
+}
+
+.btn-nav:hover {
+  cursor: pointer;
+}
+
+.nav-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.btn-nav-icon {
+  width: 100%;
+  height: 100%;
+
+  stroke-dasharray: 60 300;
+  transition: all 0.7s;
+}
+
+.nav-icon-clicked {
+  stroke-dashoffset: -92;
+  transform: translate(-0.3px, 0);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.329);
+  backdrop-filter: blur(15px);
+  transform: translateX(-100%);
+  z-index: 9;
+
+  transition: all 0.3s;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  transform: translateX(30%);
+
+  transition: all 0.3s 0.3s;
+
+  opacity: 0;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  position: relative;
+
+  transition: all 0.3s;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 0%;
+  height: 5px;
+  border-radius: 5rem;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 48em) {
+  .nav-link:hover::before {
+    width: 100%;
+  }
+
+  .source-code::before {
+    bottom: 1rem;
+    border-radius: 5rem;
+  }
+}
+
+.source-code {
+  margin-bottom: 4rem;
+}
+
+/* When Button Clicked */
+.nav-fade-in {
+  transform: translateX(0);
+}
+
+.nav-list-fade-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container {
+  width: 32rem;
+  height: 20rem;
+  border-bottom: 2px solid white;
+
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: inline-block;
+
+  font-family: sans-serif;
+  color: var(--clr-btn);
+  font-size: 1.6rem;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 3px solid var(--clr-btn);
+  box-shadow: inset 0 0px 1rem var(--clr-btn);
+
+  text-shadow: 0 1px 5px var(--clr-btn);
+
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0;
+  top: 145%;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 1rem;
+  background-color: var(--clr-btn);
+  transform: perspective(1.5rem) rotateX(4deg) scale(1, 0.85);
+  filter: blur(2.5rem);
+}
+
+.wrapper {
+  position: absolute;
+  left: 3rem;
+  bottom: 0.5rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  animation: animate-y 0.95s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--clr-circle);
+  box-shadow: 0 1px 10px var(--clr-circle), 0 1px 20px var(--clr-circle),
+    0 1px 30px var(--clr-circle);
+
+  animation: animate-x 1.9s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate-x {
+  0% {
+    transform: translate(0, 0);
+    filter: hue-rotate(0deg);
+  }
+
+  33.33333% {
+    transform: translate(8rem, 0rem);
+    filter: hue-rotate(120deg);
+  }
+
+  66.66666% {
+    transform: translate(16rem, 0rem);
+    filter: hue-rotate(240deg);
+  }
+
+  100% {
+    transform: translate(24rem, 0);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animate-y {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  33.33333% {
+    transform: translate(0, -8rem);
+  }
+
+  66.66666% {
+    transform: translate(0, 0rem);
+  }
+
+  100% {
+    transform: translate(0, -8rem);
+  }
+}
+
+@keyframes animate-glow {
+  0% {
+    filter: blur(2.5rem);
+  }
+
+  100% {
+    filter: blur(2rem);
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 55%;
+  }
+}
