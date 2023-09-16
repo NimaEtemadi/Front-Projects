@@ -1,0 +1,438 @@
+/* todo Rispansiv Laptop And Mobiles */
+
+/*! rispan -1 ::: header  */
+
+@media (max-width : 900px)
+{
+     .main-menu ul li a
+     {
+          display: none;
+     }
+
+     .main-menu ul li .how
+     {
+          display: none;
+     }
+
+     .Texters-header
+     {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          position: relative;
+          top: 200px;
+     }
+
+     .Texters-header h2
+     {
+          margin-left: 20px;
+     }
+
+     .Texters-header h1
+     {
+          margin-left: 20px;
+          font-size: 50px;
+          width: 400px;
+          height: 120px;
+          padding-top: 15px;
+          border-left: 5px solid red;
+          border-right: 5px solid red;
+     }
+
+     .Texters-header h3
+     {
+          margin-left: 20px;
+     }
+
+     .Texters-header .btn-one
+     {
+         display: none;
+     }
+}
+
+/* !----------------------------respansiv for content ----------------------------- */
+
+@media (max-width : 1100px)
+{
+
+     .content-one
+     {
+          width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(1 , 60%);
+          justify-content: center;
+          gap: 20px;
+     }
+}
+
+@media (max-width : 650px)
+{
+     .content-one
+     {
+          display: grid;
+          grid-template-columns: repeat(1 , 100%);
+          justify-content: center;
+          gap: 20px;
+     }
+
+     .item-content-1 h4
+     {
+        margin-left: 10px;
+     }
+     
+     .item-content-1 h2
+     {
+        margin-left: 10px; 
+     }
+
+     .item-content-1
+     {
+          margin-left: 30px;
+     }
+     
+     .item-content-1 p
+     {
+          margin-left: 10px;
+     }
+
+     .item-content-1 .btn-two
+     {
+          margin-left: 10px;
+     }
+
+     .item-content-2 
+     {
+          display: grid;
+          grid-template-columns: repeat(1 , 200x);
+          gap: 20px;
+     }
+     
+     .item-content-2 img
+     {
+          width: 200px;
+          height: 200px;
+          margin: 5px;
+     }    
+}
+
+
+
+
+/* !--------------------------------Sunday Deals-------------------------------------*/
+
+@media (max-width : 900px)
+{
+     .Sunday-Deals
+     {
+          width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(1 , 1fr);
+          gap: 20px;
+     }
+          
+}
+
+/* !----------------------------------------Gells----------------------------------------------*/
+
+
+@media (max-width : 1100px)
+{
+     .container-slider
+     {
+          /* --grid--Loyout */
+          display: grid;
+          grid-template-columns: repeat(2 , 1fr);
+          gap: 20px;
+     }
+
+     .slider
+     {
+          width: 100%;
+          height: auto;
+          background-image: linear-gradient(rgba(236, 92, 92, 0.75) , rgba(236, 6, 6, 0.527)) , 
+          url(Image/slider-2.jpg);
+          background-size: cover;
+          background-position: left;
+          background-repeat: no-repeat; 
+          margin-top: 120px;
+     }
+
+     .item-slider-1
+     {
+          margin-left: 15px;
+     }       
+}
+
+/* ==== Mobile === */
+
+
+@media (max-width : 600px)
+{
+     .container-slider
+     {
+          display: grid;
+          grid-template-columns: repeat(1 , 1fr);
+          gap: 20px;
+     }  
+
+     .item-slider-1
+     {
+          position: relative;
+          left: 80px;
+     }     
+}
+
+/* ! --------------------------------Our Menu--------------------------------------------*/
+
+@media (max-width : 1100px)
+{
+     .Container-Menu
+     {
+          display: grid;
+          grid-template-columns: repeat(1 , auto);
+          gap: 5px;
+     }
+
+     .item-Menu
+     {
+          width: auto;
+          height: 100px;
+          border-bottom: 2px dotted #999999;
+          padding: 15px;
+          margin-top: 15px;
+     }    
+}
+
+
+/* !-- --------------------------------Our Gallery----------------------------------------> */
+
+
+@media (max-width : 1300px)
+{
+     .container-Gallery
+     {
+          width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(3 , 330px);
+          grid-template-rows: repeat(3 , auto);
+          gap: 10px;
+     }
+}
+
+
+
+@media (max-width : 900px)
+{
+     .container-Gallery
+     {
+          display: grid;
+          grid-template-columns: repeat(2 , 330px);
+          grid-template-rows: repeat(2 , auto);
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .container-Gallery img
+     {
+          width: 290px;
+          height: 230px;
+     }
+}
+
+@media (max-width : 500px)
+{
+     .container-Gallery
+     {
+          display: grid;
+          grid-template-columns: repeat(1 , 400px);
+          grid-template-rows: repeat(1 , auto);
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .container-Gallery img
+     {
+          width: 400px;
+          height: 230px;
+     }
+}
+
+/* !-- -------------------------------------Love Us-------------------------------------------*/
+
+
+@media (max-width : 800px)
+{
+     .Container-Love img
+     {
+         border-radius: 100%;
+         position: relative;
+         left: 140px;
+         margin: 14px 12px;
+         border: 3px solid #fff;
+         animation: imgtoper 3s infinite;
+         animation-direction: alternate;
+         transition: all 3s ease-in;
+     }
+     .Container-Love p
+     {
+          text-align: center;
+          font-size: 12px;
+          font-family: UncutSans;
+          color: #fff;
+          padding: 10px 0px;
+     }
+
+     @keyframes imgtoper
+     {
+          0%
+          {
+               transform: rotate(0deg);
+               border: 3px solid #000;
+          }
+          100%
+          {
+               transform: rotate(0deg);
+               border: 3px solid #fff;
+          }
+     }
+
+}
+
+/*! --------------------------------Our Chefs--------------------------------------------- */
+
+@media (max-width:600px)
+{
+     .item-chefs img
+     {
+          width: 335px;
+          height: 335px;
+          position: relative;
+          top: 5px;
+          left: 5px;
+          border-radius: 40%;
+     }
+
+     .item-chefs
+     {
+          width: 350px;
+          height: 350px;
+          border: 3px solid #e94b3f;
+          margin: 10px 8px;
+          border-radius: 40%;
+     }
+}
+
+
+/*!-- ---------------------------------New Event----------------------------- --> */
+
+@media (max-width : 1000px)
+{
+     .container-event
+     {
+          width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(2 , 1fr);
+          gap: 30px;
+          align-items: center;
+          justify-content: center;
+     }    
+}
+
+@media (max-width : 650px)
+{
+     .container-event
+     {
+          width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(1 , 1fr);
+          gap: 30px;
+          align-items: center;
+          justify-content: center;
+     }    
+
+     .item-event img
+     {
+          width: 280px;
+          height: 300px;
+          object-fit: cover;
+          transition: transform .25s ease-in-out;
+          position: relative;
+          left: 100px;
+     }
+
+     .item-event h1
+     {
+          font-size: 15px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-weight: 900;
+          padding: 10px 0px;
+          text-align: center;
+     }
+
+
+     .item-event p
+     {
+          color: #272626;
+          font-size: 15px;
+          padding: 15px 0px;
+          text-align: center;
+     }
+     
+     .item-event .read-story
+     {
+          position: relative;
+          right: 30px;
+     }
+}
+
+
+/* !-- ----------------------------------------Links-----------------------------------------> */
+
+@media (max-width : 600px)
+{
+     .container-Contact h3
+     {
+          font-size: 18px;
+          padding: 10px 5px;
+     }
+     
+     .container-Contact h4
+     {
+          color: #fff;
+          padding: 10px 5px;
+     }
+     
+     .container-Contact h5
+     {
+          color: #fff;
+          padding: 10px 5px;
+     }   
+}
+
+
+/* !-- ----------------------------------------footer---------------------------------------- --> */
+
+
+@media (max-width : 800px)
+{
+     .footer-inner div h2
+     {
+          display: none;
+     }
+     
+}
+
+/* !- --end-- --> */
