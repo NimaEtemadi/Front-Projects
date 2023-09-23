@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player 10110</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+
+      <h1>Music Player 10110</h1>
+      <h2 class="playList"><br><br><span>Play List</span><br><hr width="100%" color="yellow"><br>1. Shape of my heart  - Sting<br>2.Fly me to the moon - Nat king Cole Sings , George Shearing Plays<br>3.Empty note - Ghostly kisses <br></h2>
+
+      <div class="music-container " id="music-container">
+          <div class="music-info">
+              <h4 id="title"></h4>
+                  <div class="progress-container" id="progress-container">
+                      <div class="progress" id="progress">   </div>
+    </div>
+        <span id="currTime"></span>
+        <span >---------------------</span>
+        <span id="durTime"></span>
+      </div>
+      <audio  src="https://dl.lavamusic.ir/wp-content/uploads/2021/07/LP-Goodbye%20(128).mp3" id="audio" >  </audio>
+        <div class="img-container">
+          <img src="https://rozup.ir/view/3442200/99-999438_way-to-zion-vinyl-shop.png" alt="music-cover" id="cover">
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn"><i class="fas  fa-backward"></i></button>
+          <button id="play" class="action-btn action-btn-big"><i class="fas  fa-play"></i></button>
+          <button id="next" class="action-btn"><i class="fas  fa-forward"></i></button>
+        </div>
+     </div>
+    <script src="script.js">    </script>
+  </body>
+</html>
